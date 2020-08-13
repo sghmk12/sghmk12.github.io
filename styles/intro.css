@@ -1,0 +1,104 @@
+body {
+    color:white;
+    background-color: #181818;
+    margin-top: -48px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow{
+    margin-top: 36px;
+}
+
+.arrow-down{
+    filter: brightness(0) invert(1);
+    padding: 8px 8px;
+}
+
+.intro-card {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/jordans.jpeg);
+    background-size: cover;
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 12px;
+    flex-direction: column;
+}
+
+.intro{
+    padding-top: 72px;
+    padding-left: 48px;
+}
+
+.intro h1{
+    max-width: 50%;
+}
+
+.intro p{
+    max-width: 35%;
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+.intro h2{
+    margin-bottom: 12px;
+    padding-right: 12px;
+}
+
+.intro ul{
+    max-width: 45%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .arrow{
+        display: none;
+    }
+
+    .intro {
+        padding-top: 102px;
+        padding-bottom: 24px;
+        padding-left: 48px;
+    }
+
+    .intro p{
+        max-width: 60%;
+        margin-top: 48px;
+        margin-bottom: 36px;
+    }
+    
+    .intro h2{
+        margin-bottom: 24px;
+        padding-right: 12px;
+        max-width: 90%;
+    }
+    
+    .intro ul{
+        max-width: 75%;
+    }    
+}
+.x-navbar {
+    background-color: transparent !important;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    z-index: 5;
+}
+
+.x-navbar-brand {
+    margin-right: 12px;
+}
+
+.x-navbar.alt-color {
+    background-color: #181818 !important;
+}
+
+.x-navbar.expanded {
+    padding-bottom: 24px;
+}
+
