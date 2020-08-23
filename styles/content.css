@@ -1,0 +1,102 @@
+.single-column-topic{
+    max-width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 24px;
+}
+
+.double-column-left {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin-left:auto;
+    margin-right:auto;
+    grid-template-columns: auto;
+    grid-template-areas: " Image " " Description " ;
+    padding: 48px 32px;
+    grid-row-gap: 32px;
+}
+
+.double-column-right {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    margin-left:auto;
+    margin-right:auto;
+    grid-template-columns: auto;
+    grid-template-areas: " Image " " Description " ;
+    padding: 32px;
+    grid-row-gap: 32px;
+}
+
+.double-column-text {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: auto;
+    grid-template-areas: " Description-1 " " Description-2 " ;
+    padding: 32px;
+    grid-row-gap: 32px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .single-column-topic{
+        max-width: 60%;
+        margin-left:auto;
+        margin-right:auto;
+        padding: 48px 12px;
+    }
+
+    .double-column-right{
+        max-width: 60%;
+        margin-left:auto;
+        margin-right:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        " Description Image " ;
+        padding: 32px;
+        grid-column-gap: 32px;
+    }
+
+    .double-column-left{
+        max-width: 60%;
+        margin-left:auto;
+        margin-right:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        " Image Description " ;
+        padding: 32px;
+        grid-column-gap: 32px;
+    }
+
+    .double-column-text{
+        max-width: 60%;
+        margin-left:auto;
+        margin-right:auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        " Description-1 Description-2" ;
+        padding: 48px 32px;
+        grid-column-gap: 32px;
+    } 
+}
+
+.content-image{
+    background-size: contain;
+    grid-area: Image;
+    height: 250px;
+    width: 250px;
+    margin: auto;
+}
+
+.content-description{
+    grid-area: Description;
+}
+
+.content-description-1{
+    grid-area: Description-1;
+}
+
+.content-description-1{
+    grid-area: Decription-2;
+}
