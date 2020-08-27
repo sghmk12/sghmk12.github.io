@@ -22,7 +22,7 @@ body {
 
 .intro-card {
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/jordans.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../images/sunset-cropped.jpg);
     background-size: cover;
     display: flex;
     padding: 12px 36px;
@@ -47,7 +47,7 @@ body {
 .intro h2{
     margin-bottom: 12px;
     padding-right: 12px;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .intro ul{
@@ -61,11 +61,11 @@ body {
 
     .intro {
         padding: 24px 12px;
-        padding-top: 102px;
+        padding-top: 64px;
     }
 
     .intro p{
-        max-width: 60%;
+        max-width: 90%;
         margin-top: 48px;
         margin-bottom: 36px;
     }
@@ -92,7 +92,7 @@ body {
 }
 
 .x-navbar.alt-color {
-    background-color: #4169e1  !important;
+    background-color: #0059b3  !important;
 }
 
 .x-navbar.expanded {
