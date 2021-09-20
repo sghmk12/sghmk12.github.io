@@ -1,4 +1,4 @@
-const ALT_COLOUR_SCROLL_POS = 24;
+const ALT_COLOUR_SCROLL_POS = 36;
 
 function getScrollPos () {
     return window.pageYOffset || document.documentElement.scrollTop;
