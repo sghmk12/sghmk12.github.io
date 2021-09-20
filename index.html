@@ -1,204 +1,96 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Sathira Katugaha</title>
+        <title>Sathira Dot Com</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="description" content="Personal Website">
         <meta name="author" content="Sathira Katugaha">
 
-        <link rel="icon" type="image/png" sizes="192x192"  href="images/avatar-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/avatar-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="images/avatar-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="images/avatar-16x16.png">
-        <link href="https://getbootstrap.com/docs/4.1/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css" />
-        <link href="https://getbootstrap.com/docs/4.1/examples/carousel/carousel.css" rel="stylesheet">
-        <link href="styles/intro.css" type="text/css" rel="stylesheet">
-        <link href="styles/content.css" type="text/css" rel="stylesheet">
+        <link rel="icon" type="image/png" sizes="509x509"  href="images/avatar.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link href="styles/nav.css" type="text/css" rel="stylesheet">
+        <link href="styles/utilities.css" type="text/css" rel="stylesheet">
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top x-navbar">
-                <a class="navbar-brand x-navbar-brand" href=""><b>ABOUT SATHIRA</b></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+        <canvas id="gradient-canvas" data-transition-in></canvas>
+        <div class="x-navbar-fixed-top">
+            <nav class="navbar navbar-light bg-light navbar-expand-md x-navbar">
+                <div class="navbar-brand x-navbar-brand-container">
+                    <img src="images/avatar.png" class="x-navbar-brand-image"/>
+                </div>
+                <button class="navbar-toggler x-navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                    <span class="navbar-toggler-icon x-navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <ul class="navbar-nav mr-auto">
+                <div class="navbar-collapse collapse x-navbar-link-container" id="navbar">
+                    <ul class="x-navbar-nav navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link external-link" href="#education">Education</a>
+                          <a class="nav-link x-navbar-link" href="#aboutme">Summary</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link external-link" href="#work-experience">Work Experience</a>
+                          <a class="nav-link x-navbar-link" href="#experience">Professional</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link external-link" href="#projects">Projects</a>
+                            <a class="nav-link x-navbar-link" href="#interests">Interests</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link external-link" href="#extra-curriculars">Extra Curriculars</a>
+                          <a class="nav-link x-navbar-link" href="#art">Art</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link external-link" href="#volunteer-experience">Awards</a>
-                        </li>
-                    </ul>
-                    <form class="form-inline mt-2 mt-md-0">
-                        <a href="https://www.linkedin.com/in/sathirakatugaha/" class="external-link" target="_blank"><img src="images/linkedin_logo.png" width="30" height="30" hspace="3"></a>
-                        <a href="https://github.com/sghmk12" class="external-link" target="_blank"><img src="images/github_logo.png" width="30" height="30" hspace="3"></a>
-                        <a href="mailto:sgkatuga@uwaterloo.ca" class="external-link" target="_blank"><img src="images/email_logo.png" width="30" height="30" hspace="3"></a>
-                    </form>
+                        <li class="divider"></li>
+                      </ul>
                 </div>
             </nav>
-        </header>
+        </div>
+        <div class="content-wrapper">
+            <main role="main">
+                <div class="content sk-center sk-center-content">
+                    <h1 style="margin-bottom: 24px;">Hi! I'm Sathira</h1>
+                    <div class="card sk-center-content full-width">
+                        <h4>This is my personal website. It's currently under development. But for now, here are some quick links!</h4>
+                    </div>
 
-        <main role="main">
-            <div class="intro-card">
-                <div class="intro">
-                    <h1> Hi, I'm Sathira! </h1>
-                    <p> I am a Computer Engineering student in the 2B semester at the University of Waterloo.
-                        I specialize in making front-end interfaces for both the web and native mobile products,
-                        however, I also love writing efficient and speedy algorithms as well as a little back-end work. 
-                    </p>
-                    <h2>If you are an employer, here is why you should hire me:</h2>
-                    <ul>
-                        <li>
-                            I have a 97% average in University of Waterloo Data Structures and Algorithms
-                        </li>
-                        <li>
-                            I helped found and am currently the lead Front-end Engineer at Kinme Technologies inc.
-                        </li>
-                        <li>
-                            I worked two prior Software Developer roles for both Android and Web at SAP inc.
-                        </li>
-                        <li>
-                            I am the class representative for my class of Electrical and Computer Engineering at the
-                            University of Waterloo
-                        </li>
-                    </ul>
-                    
-                    <h2>Here are some fun things I do:</h2>
-                    <ul>
-                        <li>
-                            I love running! I am currently training myself to run a marathon
-                        </li>
-                        <li>
-                            I practiced Tae Kwon Do and boxing for 3 years and am very fond of martial arts
-                        </li>
-                        <li>
-                            I love art and am very adept at sketching
-                        </li>
-                        <li>
-                            I like collecting sneakers, I currently own a pair of Air Jordan 1 Obsidian
-                        </li>
-                    </ul>
+                    <div class="card full-width">
+                        <a target="blank" href="https://www.github.com/sghmk12">
+                            <div class="sk-row card-link">
+                                <img src="images/github_logo.png" class="card-link-image"/>
+                                <h4>Check out my Projects on Github</h4>
+                            </div>
+                        </a>
+                        <div class="sk-divider-container">
+                            <hr class="sk-divider"/>
+                        </div>
+                        <a target="blank" href="https://www.linkedin.com/in/sathirakatugaha">
+                            <div class="sk-row card-link">
+                                <img src="images/linkedin_logo.png" class="card-link-image"/>
+                                <h4>Visit my LinkedIn</h4>
+                            </div>
+                        </a>
+                        <div class="sk-divider-container">
+                            <hr class="sk-divider"/>
+                        </div>
+                        <a target="blank" href="mailto:sathirakatugaha@gmail.com">
+                            <div class="sk-row card-link">
+                                <img src="images/email_logo.png" class="card-link-image"/>
+                                <h4>Email me!</h4>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class='center arrow'>
-                    <h6>
-                        Scroll down to find out more
-                    </h6>
-                </div>
-            </div>
-            <div>
-                <h1>Education:</h1>
-            </div>
-            <div class='double-column-left'>
-                <img class="content-image" src="images/waterloo.png">
-                <div class="content-description">
-                    <ul>
-                        <li>
-                            I am pursuing a Bachelor's of Applied Science in 
-                            an Honour's Computer Engineering Co-op degree at 
-                            the University of Waterloo.
-                        </li>
-                        <li>
-                            In this degree I study how to make computers from low level micro-processors to
-                            high level servers.
-                        </li>
-                        <li>
-                            My expected graduation date is May 2023.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <h1>Work Experience:</h1>
-            </div>
-            <div class='double-column-left'>
-                <img class="content-image" src="images/Kinme.png">
-                <div class="content-description">
-                    <ul>
-                        <li>
-                            <b>Lead and Founding Front-end Engineer - Kinme Technologies inc.</b>
-                        </li>
-                        <li>
-                            For summer 2020 (and currently still working) I began a new journey by working for a brand new start-up
-                            tech company aimed at digitalizing the real-estate market. I wrote the entire user interface for this product from scratch
-                            by myself in 4 months and we are currently serving a hundred or so real-estate contractors and realtors.
-                        </li>
-                        <li>
-                            This was my third co-op and here I discovered my true potential as a software engineer. Often, I found
-                            myself being pushed to my limits and accomplishing things I never thought were possible to do within 4
-                            months by myself. I learned on an exponential scale and became a self-claimed master of React.
-                        </li>
-                        <li>
-                            This application is built on React upon Node.js and uses Material-UI for pre-styled html elements. I do server calls
-                            using axios and manage application state using redux. I do routing for the application through react-router
-                            and have 3 routes for un-authenticated users, authenticated customers and authenticated contractors.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class='double-column-right'>
-                <img class="content-image" src="images/sap.png">
-                <div class="content-description">
-                    <ul>
-                        <li>
-                            <b>Big Data Tooling Developer - SAP SE inc.</b>
-                        </li>
-                        <li>
-                            I worked on multiple SAP Big Data Tooling websites in Fall 2019 at SAP Waterloo. I mostly
-                            created new front-end UI applications for the website however I also added extra depth to their
-                            database history collection API as well as created a new algorithm and function for starting and
-                            stopping databases remotely.
-                        </li>
-                        <li>
-                            This was my second co-op and I learned quite a lot about how developing features that affect hundreds
-                            of thousands of clients must invovle extensive testing and extreme attention to detail.
-                        </li>
-                        <li>
-                            I coded the front-end user interface for these websites in XML and javascript using SAP Fiori design
-                            elements, whislt I coded the back-end in Java.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class='double-column-left'>
-                <img class="content-image" src="images/sapGang.jpg">
-                <div class="content-description">
-                    <ul>
-                        <li>
-                            <b>Android Developer - SAP SE inc.</b>
-                        </li>
-                        <li>
-                            I worked on the SAP Mobile Cloud Android SDK in Winter 2019 at SAP Waterloo. I mostly focued
-                            on front-end and UI, however I also optimized rendering algorithms in the front-end libraries
-                            as well as the latency for data streaming in Cloud applications.
-                        </li>
-                        <li>
-                            This was my first co-op and I learned quite a lot about the software development lifecycle
-                            in large scale companies.
-                        </li>
-                        <li>
-                            I coded the user interface of these applications in XML and Java. I also wrote back-end features in Java.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-        <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
-        <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
-        <script src="javascript/index.js"></script>
+            </main>   
+            <footer>
+            </footer> 
+        </div>
+
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+        <script type="module" src="javascript/index.js"></script>
+        <script type="module" src="javascript/navbarScrollEffect.js"></script>
     </body>
 </html>
