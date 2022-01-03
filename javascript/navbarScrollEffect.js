@@ -5,24 +5,34 @@ function getScrollPos () {
 }
 
 jQuery(document).ready(function($) {
+    var navbar = $('.x-navbar'),
+        title = $('.x-navbar-hidden-title');
+    navbar.expanded = false;
     var initialScrollPos = getScrollPos();
-    console.log({initialScrollPos})
-    if (initialScrollPos > ALT_COLOUR_SCROLL_POS) $(".x-navbar").addClass("alt-color");
-
+    
+    if (initialScrollPos > ALT_COLOUR_SCROLL_POS) navbar.addClass("alt-color");
+    
     window.onscroll = function() {
-        var scrollPos = getScrollPos(),
-            navbar = $('.x-navbar');
-                
-        if (scrollPos > ALT_COLOUR_SCROLL_POS) {
-            navbar.addClass('alt-color');
+        var scrollPos = getScrollPos();
+            
+        if(!navbar.expanded){
+            if (scrollPos <= ALT_COLOUR_SCROLL_POS) {
+                navbar.removeClass('alt-color');
+            } else {
+                navbar.addClass('alt-color');
+            }
+        }
+        if (scrollPos <= ALT_COLOUR_SCROLL_POS) {
+            title.removeClass('show');
         } else {
-            navbar.removeClass('alt-color');
+            title.addClass('show');
         }
     };
 
     $(".navbar-toggler").click(function(){
         var scrollPos = getScrollPos();
-        if (scrollPos <= ALT_COLOUR_SCROLL_POS) $(".x-navbar").toggleClass("alt-color");
-        $(".x-navbar").toggleClass("expanded");
+        if (scrollPos <= ALT_COLOUR_SCROLL_POS) navbar.toggleClass("alt-color");
+        navbar.toggleClass("expanded");
+        navbar.expanded = !navbar.expanded;
     })
 });

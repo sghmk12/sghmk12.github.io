@@ -92,6 +92,14 @@ footer{
     background-color: var(--card-background);
     padding: var(--padding-big);
     color: var(--card-contrast-colour);
+    moz-transition: all var(--nav-animation-duration) ease-out;
+    -o-transition: all var(--nav-animation-duration) ease-out;
+    -webkit-transition: all var(--nav-animation-duration) ease-out;
+    transition: all var(--nav-animation-duration) ease-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 
 .card.full-width{
@@ -103,16 +111,12 @@ footer{
     margin-bottom: var(--margin-big);
 }
 
-.card-link > * {
+.card-link-text{
     color: var(--card-contrast-colour-dark);
-    moz-transition: all var(--animation-duration) ease-out;
-    -o-transition: all var(--animation-duration) ease-out;
-    -webkit-transition: all var(--animation-duration) ease-out;
-    transition: all var(--animation-duration) ease-out;
     text-align: left;
 }
 
-.card-link > *:hover {
+.card-link-text:hover {
     color: black;
     font-weight: 600;
 }
