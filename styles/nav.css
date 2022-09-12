@@ -1,128 +1,128 @@
-:root{
-    --nav-alt-colour: rgba(255, 255, 255, 1);
-    --nav-animation-duration: .3s;
+:root {
+  --nav-alt-colour: rgba(250, 250, 250, 0.95);
+  --nav-animation-duration: 0.3s;
 }
 
 .x-navbar {
-    background-color: transparent !important;
-    moz-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-    z-index: 5;
-    padding: 24px;
+  background-color: transparent !important;
+  moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+  padding: 24px;
 }
 
-.x-navbar-fixed-top{
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 50;
+.x-navbar-fixed-top {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
 }
 
 .x-navbar.alt-color {
-    background-color: var(--nav-alt-colour) !important;
+  background-color: var(--nav-alt-colour) !important;
 }
 
 .x-navbar-hidden-title {
-    display: none;
+  display: none;
 }
 
 .x-navbar-hidden-title.show {
-    display: inherit;
+  display: inherit;
 }
 
-.x-navbar-brand-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
+.x-navbar-brand-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
 }
 
 .x-navbar-brand {
-    font-size: 1.5rem;
-    color: var(--gradient-contrast-colour) !important;
-    text-decoration: none;
-    padding: 0px 16px;
-    font-weight: bolder;
-    margin-top: 0px;
-    margin-bottom: 0px;
+  font-size: 1.5rem;
+  color: var(--gradient-contrast-colour) !important;
+  text-decoration: none;
+  padding: 0px 16px;
+  font-weight: bolder;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-.x-navbar-brand-image{
-    height: 48px;
-    width: 48px;
+.x-navbar-brand-image {
+  height: 48px;
+  width: 48px;
 }
 
-.x-navbar-link-container{
-    justify-content: end;
+.x-navbar-link-container {
+  justify-content: end;
 }
 
-.x-navbar-link-icons{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    text-align: center;
+.x-navbar-link-icons {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.x-navbar-link-icon{
-    margin-right: 12px;
+.x-navbar-link-icon {
+  margin-right: 12px;
 }
 
 .x-navbar-link-icon > img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
-.x-navbar-link{
-    font-size: 1.25rem;
+.x-navbar-link {
+  font-size: 1.25rem;
 }
 
-.nav-link{
-    font-weight: 700;
-    font-size: 1.25rem;
-    margin-left: 12px;
-    color: var(--gradient-contrast-colour) !important;
-    moz-transition: all var(--nav-animation-duration) ease-out;
-    -o-transition: all var(--nav-animation-duration) ease-out;
-    -webkit-transition: all var(--nav-animation-duration) ease-out;
-    transition: all var(--nav-animation-duration) ease-out;
+.nav-link {
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-left: 12px;
+  color: var(--gradient-contrast-colour) !important;
+  moz-transition: all var(--nav-animation-duration) ease-out;
+  -o-transition: all var(--nav-animation-duration) ease-out;
+  -webkit-transition: all var(--nav-animation-duration) ease-out;
+  transition: all var(--nav-animation-duration) ease-out;
 }
 
-.nav-link:hover{
-    color: black !important;
-    transform: scale(1.05);
+.nav-link:hover {
+  color: black !important;
+  transform: scale(1.05);
 }
 
-.x-navbar-link-icons{
-    flex-grow: inherit;
+.x-navbar-link-icons {
+  flex-grow: inherit;
 }
 
-.expanded{
-    margin-bottom: 24px;
+.expanded {
+  margin-bottom: 24px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .x-navbar-link-icons{
-        margin-top: 12px;
-        margin-bottom: 12px;
-        margin-left: 8px;
-    }
+  .x-navbar-link-icons {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 8px;
+  }
 
-    .x-navbar-brand{
-        display: none;
-    }
+  .x-navbar-brand {
+    display: none;
+  }
 
-    .x-navbar-nav{
-        margin-top: 12px;
-    }
+  .x-navbar-nav {
+    margin-top: 12px;
+  }
 
-    .nav-link{
-        font-size: 1rem;
-    }
+  .nav-link {
+    font-size: 1rem;
+  }
 
-    .x-navbar-link-icon > img {
-        width: 32px;
-        height: 32px;
-    }
+  .x-navbar-link-icon > img {
+    width: 32px;
+    height: 32px;
+  }
 }

@@ -1,118 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Sathira Dot Com</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta name="description" content="Personal Website">
-        <meta name="author" content="Sathira Katugaha">
+  <head>
+    <title>Sathira Dot Com</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="Personal Website" />
+    <meta name="author" content="Sathira Katugaha" />
 
-        <link rel="icon" type="image/png" sizes="509x509"  href="images/avatar.png">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-        
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-        <link href="styles/nav.css" type="text/css" rel="stylesheet">
-        <link href="styles/utilities.css" type="text/css" rel="stylesheet">
-        <link href="styles/index.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <canvas id="gradient-canvas" data-transition-in></canvas>
-        <div class="x-navbar-fixed-top">
-            <nav class="navbar navbar-light bg-light navbar-expand-md x-navbar">
-                <div class="navbar-brand x-navbar-brand-container">
-                    <img src="images/avatar.png" class="x-navbar-brand-image"/>
-                    <p class="x-navbar-hidden-title x-navbar-brand">Hi! I'm Sathira</p>
-                </div>
-                <button class="navbar-toggler x-navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
-                    <span class="navbar-toggler-icon x-navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse x-navbar-link-container" id="navbar">
-                    <ul class="x-navbar-nav navbar-nav mr-auto">
-                        <li class="nav-item">
-                          <a class="nav-link x-navbar-link" href="#aboutme">Summary</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link x-navbar-link" href="#experience">Professional</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link x-navbar-link" href="#interests">Interests</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link x-navbar-link" href="#art">Art</a>
-                        </li>
-                        <li class="divider"></li>
-                      </ul>
-                </div>
-            </nav>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="509x509"
+      href="images/avatar.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="styles/nav.css" type="text/css" rel="stylesheet" />
+    <link href="styles/utilities.css" type="text/css" rel="stylesheet" />
+    <link href="styles/index.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <canvas id="gradient-canvas" data-transition-in></canvas>
+    <div class="x-navbar-fixed-top">
+      <nav class="navbar navbar-light bg-light navbar-expand-md x-navbar">
+        <div class="navbar-brand x-navbar-brand-container">
+          <img src="images/avatar.png" class="x-navbar-brand-image" />
+          <p class="x-navbar-hidden-title x-navbar-brand">Hi! I'm Sathira</p>
         </div>
-        <div class="content-wrapper">
-            <main role="main">
-                <div class="content sk-center sk-center-content">
-                    <h1 style="margin-bottom: 24px;">Hi! I'm Sathira</h1>
-                    <div class="card sk-center-content full-width">
-                        <h2>Summary:</h2>
-                        <h4>
-                            I'm a front-end/UI engineer and this is my personal website. 
-                            I built it as both a demonstration of my skills within my profession 
-                            and also a way for my colleagues to get to know me.
-                        </h4>
-                    </div>
-
-                    <div class="card sk-center-content full-width">
-                        <h2>Credits:</h2>
-                        <h4>
-                            This website is built with minimal use of external libraries and focus 
-                            on pure HTML/CSS. I would, however, like to credit the libraries that were used:
-                        </h4>
-                        <div style="text-align: left;">
-                            <ul>
-                                <li>Stripe: open source background gradient animation</li>
-                                <li>JQuery: methods to manipulate the HTML DOM</li>
-                                <li> Bootstrap: for the base navbar used in this website</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-
-                    <div class="card full-width">
-                        <a target="blank" href="https://www.github.com/sghmk12">
-                            <div class="sk-row">
-                                <img src="images/github_logo.png" class="card-link-image"/>
-                                <h4 class="card-link-text">Check out my Projects on Github</h4>
-                            </div>
-                        </a>
-                        <div class="sk-divider-container">
-                            <hr class="sk-divider"/>
-                        </div>
-                        <a target="blank" href="https://www.linkedin.com/in/sathirakatugaha">
-                            <div class="sk-row">
-                                <img src="images/linkedin_logo.png" class="card-link-image"/>
-                                <h4 class="card-link-text">Visit my LinkedIn</h4>
-                            </div>
-                        </a>
-                        <div class="sk-divider-container">
-                            <hr class="sk-divider"/>
-                        </div>
-                        <a target="blank" href="mailto:sathirakatugaha@gmail.com">
-                            <div class="sk-row">
-                                <img src="images/email_logo.png" class="card-link-image"/>
-                                <h4 class="card-link-text">Email me</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </main>   
-            <footer>
-            </footer> 
+        <button
+          class="navbar-toggler x-navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar"
+        >
+          <span class="navbar-toggler-icon x-navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="navbar-collapse collapse x-navbar-link-container"
+          id="navbar"
+        >
+          <ul class="x-navbar-nav navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link x-navbar-link" href="/">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link x-navbar-link" href="/"
+                >...Other sections coming soon</a
+              >
+            </li>
+          </ul>
         </div>
+      </nav>
+    </div>
+    <div class="content-wrapper">
+      <main role="main">
+        <div class="content sk-center sk-center-content">
+          <h1 style="margin-bottom: 24px">Hi! I'm Sathira</h1>
+          <div class="card sk-center-content full-width">
+            <h2>This website is under development!</h2>
+            <h4>
+              My name is Sathira. I'm a frontend/UI engineer and this is my
+              personal website, currently undergoing redesign. I built it as
+              both a demonstration of my skills within my profession and also a
+              way for my colleagues to get to know me.
+            </h4>
+          </div>
 
-        <script src="//code.jquery.com/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
-        <script type="module" src="javascript/index.js"></script>
-        <script type="module" src="javascript/navbarScrollEffect.js"></script>
-    </body>
+          <div class="card sk-center-content full-width">
+            <h2>Credits:</h2>
+            <h4>
+              This website is built with minimal use of external libraries and
+              focus on pure HTML/CSS. I would, however, like to credit the
+              libraries that were used:
+            </h4>
+            <div style="text-align: left">
+              <ul>
+                <li>
+                  <a href="github.com/febriliankr/stripe-gradient"
+                    >@febriliankr:</a
+                  >
+                  open source background gradient animation
+                </li>
+                <li>
+                  <a href="jquery.com/">JQuery:</a> methods to manipulate the
+                  HTML DOM
+                </li>
+                <li>
+                  <a href="getbootstrap.com/docs/4.0/components/navbar/"
+                    >Bootstrap:</a
+                  >
+                  for the base navbar used in this website
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card full-width">
+            <a target="blank" href="https://www.github.com/sghmk12">
+              <div class="sk-row">
+                <img src="images/github_logo.png" class="card-link-image" />
+                <h4 class="card-link-text">Check out my Projects on Github</h4>
+              </div>
+            </a>
+            <div class="sk-divider"></div>
+            <a
+              target="blank"
+              href="https://www.linkedin.com/in/sathirakatugaha"
+            >
+              <div class="sk-row">
+                <img src="images/linkedin_logo.png" class="card-link-image" />
+                <h4 class="card-link-text">Visit my LinkedIn</h4>
+              </div>
+            </a>
+            <div class="sk-divider"></div>
+            <a target="blank" href="mailto:sathirakatugaha@gmail.com">
+              <div class="sk-row">
+                <img src="images/email_logo.png" class="card-link-image" />
+                <h4 class="card-link-text">Email me</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </main>
+      <footer></footer>
+    </div>
+
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="javascript/index.js"></script>
+    <script type="module" src="javascript/navbarScrollEffect.js"></script>
+  </body>
 </html>

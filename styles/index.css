@@ -1,14 +1,14 @@
 :root {
   --animation-duration: 0.3s;
 
-  --gradient-contrast-colour: rgba(0, 0, 0, 0.5);
+  --gradient-contrast-colour: rgba(0, 0, 0, 0.75);
 
   --card-background: rgba(255, 255, 255, 0.85);
   --card-contrast-colour: rgba(0, 0, 0, 0.5);
   --card-contrast-colour-dark: rgba(0, 0, 0, 0.75);
   --box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.1);
 
-  --divider-colour: rgba(0, 0, 0, 0.85);
+  --divider-colour: rgba(0, 0, 0, 0.1);
 
   --border-radius-big: 44px;
   --border-radius-small: 22px;
@@ -130,8 +130,5 @@ footer {
 .sk-divider {
   border-top: 2px solid var(--divider-colour);
   width: 100%;
-}
-
-.sk-divider-container {
-  margin: 0px var(--margin-small);
+  margin: var(--margin-big) 0px;
 }
