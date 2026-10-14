@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Sathira Katugaha</title>
+  <meta name="description" content="Get in touch with Sathira Katugaha." />
+  <link rel="canonical" href="https://sathira.world/contact/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sathira’s World" />
+  <meta property="og:title" content="Contact — Sathira Katugaha" />
+  <meta property="og:description" content="Get in touch with Sathira Katugaha." />
+  <meta property="og:url" content="https://sathira.world/contact/" />
+  <!-- @og-image -->
+  <link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- @header -->
+
+  <main id="main" class="page-top">
+    <section class="marquee" aria-label="Get in touch">
+      <div class="marquee__track" aria-hidden="true"></div>
+      <h1 class="sr-only">Get in touch</h1>
+    </section>
+
+    <section class="contact-grid">
+      <!--
+        Static hosting has no server to receive the form. Set data-endpoint to a
+        form service URL (Formspree, Basin, Getform, a serverless function…) to
+        POST submissions there. Without one, the form falls back to opening the
+        visitor's email client addressed to data-mailto.
+      -->
+      <form class="contact-form reveal" data-endpoint="" data-mailto="sathirakatugaha@gmail.com" novalidate>
+        <fieldset>
+          <legend>Name</legend>
+          <div class="field-pair">
+            <label>First Name <span class="req">(required)</span>
+              <input name="firstName" autocomplete="given-name" required />
+            </label>
+            <label>Last Name <span class="req">(required)</span>
+              <input name="lastName" autocomplete="family-name" required />
+            </label>
+          </div>
+        </fieldset>
+        <label>Email <span class="req">(required)</span>
+          <input name="email" type="email" autocomplete="email" required />
+        </label>
+        <label>Message <span class="req">(required)</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <p class="form-status" role="status" aria-live="polite"></p>
+        <button class="pill pill--lg" type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- @footer -->
+</body>
+</html>

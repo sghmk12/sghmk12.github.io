@@ -1,0 +1,22 @@
+{
+  "name": "personal-website-evo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "photos": "node scripts/life-photos.mjs",
+    "deploy": "vite build && wrangler deploy",
+    "photo": "node scripts/convert-photo.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.5",
+    "vite": "^6.4.3",
+    "wrangler": "^4.150.0"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0"
+  }
+}

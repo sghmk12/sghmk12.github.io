@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+.playwright-mcp
+.wrangler
+
+# Original photos carry GPS metadata — only the converted tiles in public/images/life belong here
+*.heic
+*.HEIC
+*.zip

@@ -1,156 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Sathira Dot Com</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <meta name="description" content="Personal Website" />
-    <meta name="author" content="Sathira Katugaha" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sathira Katugaha</title>
+  <meta name="description" content="Welcome to my world — the personal site of Sathira Katugaha." />
+  <link rel="canonical" href="https://sathira.world/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sathira’s World" />
+  <meta property="og:title" content="Sathira Katugaha" />
+  <meta property="og:description" content="Welcome to my world — the personal site of Sathira Katugaha." />
+  <meta property="og:url" content="https://sathira.world/" />
+  <!-- @og-image -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sathira Katugaha",
+      "url": "https://sathira.world/",
+      "image": "https://sathira.world/images/portrait-468.webp",
+      "email": "mailto:sathirakatugaha@gmail.com",
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Waterloo" },
+      "sameAs": ["https://www.linkedin.com/in/sathirakatugaha", "https://x.com/SathTweet"]
+    }
+  </script>
+  <link rel="icon" href="{{root}}favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- @header -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="509x509"
-      href="images/avatar.png"
-    />
+  <main id="main">
+    <section class="hero" aria-label="Introduction">
+      <h1 class="hero__title">
+        <span class="hero__kicker reveal">I’m Sathira</span>
+        <span class="hero__word hero__word--one reveal">Welcome to</span>
+        <span class="hero__word hero__word--two reveal">my World!</span>
+        <span class="hero__tag reveal">I hope you love it as much as I do</span>
+      </h1>
+    </section>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <section class="row row--interests" id="interests" aria-labelledby="interests-label">
+      <h2 class="label reveal" id="interests-label">Interests</h2>
+      <div class="interest-grid">
+        <figure class="interest reveal">
+          <figcaption>Cycling</figcaption>
+          <a class="zoom" href="{{root}}images/interests/cycling-full.webp" data-avif="{{root}}images/interests/cycling-full.avif">
+            <picture style="background-color:#c8c8b8">
+              <source type="image/avif" srcset="{{root}}images/interests/cycling-600.avif 600w, {{root}}images/interests/cycling-1200.avif 1200w" sizes="auto, (max-width: 767px) 92vw, 30vw" />
+              <img src="{{root}}images/interests/cycling-1200.webp" srcset="{{root}}images/interests/cycling-600.webp 600w, {{root}}images/interests/cycling-1200.webp 1200w" sizes="auto, (max-width: 767px) 92vw, 30vw" alt="A green road bike leaning against a pale painted brick wall" width="1200" height="1200" loading="lazy" decoding="async" />
+            </picture>
+          </a>
+        </figure>
+        <figure class="interest reveal">
+          <figcaption>Movies</figcaption>
+          <a class="zoom" href="{{root}}images/interests/movies-full.webp" data-avif="{{root}}images/interests/movies-full.avif">
+            <picture style="background-color:#080808">
+              <source type="image/avif" srcset="{{root}}images/interests/movies-600.avif 600w, {{root}}images/interests/movies-1200.avif 1200w" sizes="auto, (max-width: 767px) 92vw, 30vw" />
+              <img src="{{root}}images/interests/movies-1200.webp" srcset="{{root}}images/interests/movies-600.webp 600w, {{root}}images/interests/movies-1200.webp 1200w" sizes="auto, (max-width: 767px) 92vw, 30vw" alt="A bag of popcorn held up in a dark cinema, feet up, with the screen glowing blue" width="1200" height="1200" loading="lazy" decoding="async" />
+            </picture>
+          </a>
+        </figure>
+        <figure class="interest reveal">
+          <figcaption>Music</figcaption>
+          <iframe class="interest__embed" src="https://open.spotify.com/embed/playlist/37i9dQZF1Epl2JKUzMdIzA" title="Spotify: Sathira’s On Repeat playlist" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </figure>
+      </div>
+    </section>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <link href="styles/nav.css" type="text/css" rel="stylesheet" />
-    <link href="styles/utilities.css" type="text/css" rel="stylesheet" />
-    <link href="styles/index.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body>
-    <canvas id="gradient-canvas" data-transition-in></canvas>
-    <div class="x-navbar-fixed-top">
-      <nav class="navbar navbar-light bg-light navbar-expand-md x-navbar">
-        <div class="navbar-brand x-navbar-brand-container">
-          <img src="images/avatar.png" class="x-navbar-brand-image" />
-          <p class="x-navbar-hidden-title x-navbar-brand">Hi! I'm Sathira</p>
-        </div>
-        <button
-          class="navbar-toggler x-navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-        >
-          <span class="navbar-toggler-icon x-navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="navbar-collapse collapse x-navbar-link-container"
-          id="navbar"
-        >
-          <ul class="x-navbar-nav navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link x-navbar-link" href="/">Summary</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link x-navbar-link" href="/"
-                >...Other sections coming soon</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    <div class="content-wrapper">
-      <main role="main">
-        <div class="content sk-center sk-center-content">
-          <h1 style="margin-bottom: 24px">Hi! I'm Sathira</h1>
-          <div class="card sk-center-content full-width">
-            <h2>This website is under development!</h2>
-            <h4>
-              My name is Sathira. I'm a frontend/UI engineer and this is my
-              personal website, currently undergoing redesign. I built it as
-              both a demonstration of my skills within my profession and also a
-              way for my colleagues to get to know me.
-            </h4>
+    <section class="row row--life" id="life-lately" aria-labelledby="life-label">
+      <h2 class="label reveal" id="life-label">Life lately</h2>
+      <ul class="life-grid">
+        <!-- @life-lately -->
+      </ul>
+    </section>
+
+    <section class="row row--work" id="work" aria-labelledby="work-label">
+      <h2 class="label reveal" id="work-label">Work</h2>
+      <p class="work-intro lede reveal">
+        My goal is to help the industry quantify and align AI behavior: to measure what AI systems
+        actually do, and make sure it matches what we intend. Here’s the road that led me here.
+      </p>
+      <ol class="timeline">
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">Lindy</h3>
+            <p class="timeline__meta"><time datetime="2025-05">2025</time>–<time datetime="2026">26</time>, Software Engineer</p>
           </div>
-
-          <div class="card sk-center-content full-width">
-            <h2>Credits:</h2>
-            <h4>
-              This website is built with minimal use of external libraries and
-              focus on pure HTML/CSS. I would, however, like to credit the
-              libraries that were used:
-            </h4>
-            <div style="text-align: left">
-              <ul>
-                <li>
-                  <a href="github.com/febriliankr/stripe-gradient"
-                    >@febriliankr:</a
-                  >
-                  open source background gradient animation
-                </li>
-                <li>
-                  <a href="jquery.com/">JQuery:</a> methods to manipulate the
-                  HTML DOM
-                </li>
-                <li>
-                  <a href="getbootstrap.com/docs/4.0/components/navbar/"
-                    >Bootstrap:</a
-                  >
-                  for the base navbar used in this website
-                </li>
-              </ul>
-            </div>
+          <p class="timeline__what">Joined as engineer #12 and the first growth engineer, then led reliability on the core AI agent framework. Cut monthly AI spend by over $200K and P99 LLM latency by 2.5×, and built online evals and agent monitoring: agents that watch other agents.</p>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">Federato</h3>
+            <p class="timeline__meta"><time datetime="2022-08">2022</time>–<time datetime="2025-05">25</time>, Software Engineer &amp; Technical Project Manager</p>
           </div>
-
-          <div class="card full-width">
-            <a target="blank" href="https://www.github.com/sghmk12">
-              <div class="sk-row">
-                <img src="images/github_logo.png" class="card-link-image" />
-                <h4 class="card-link-text">Check out my Projects on Github</h4>
-              </div>
-            </a>
-            <div class="sk-divider"></div>
-            <a
-              target="blank"
-              href="https://www.linkedin.com/in/sathirakatugaha"
-            >
-              <div class="sk-row">
-                <img src="images/linkedin_logo.png" class="card-link-image" />
-                <h4 class="card-link-text">Visit my LinkedIn</h4>
-              </div>
-            </a>
-            <div class="sk-divider"></div>
-            <a target="blank" href="mailto:sathirakatugaha@gmail.com">
-              <div class="sk-row">
-                <img src="images/email_logo.png" class="card-link-image" />
-                <h4 class="card-link-text">Email me</h4>
-              </div>
-            </a>
+          <p class="timeline__what">Joined at Series A as engineer #7 on an AI-powered insurance underwriting platform. Built the web app, its GraphQL API and an accessible component library, then also led client projects from scoping to deployment.</p>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">Meta</h3>
+            <p class="timeline__meta"><time datetime="2022">2022</time>, Frontend Engineer Intern, Infrastructure</p>
           </div>
-        </div>
-      </main>
-      <footer></footer>
-    </div>
+          <p class="timeline__what">Built an internal infrastructure app around complex graph-traversal algorithms in React and Recoil, with back-end services in Hack.</p>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">Facebook</h3>
+            <p class="timeline__meta"><time datetime="2021">2021</time>, Frontend Engineer Intern, AI Research</p>
+          </div>
+          <p class="timeline__what">Contributed to Mephisto, Facebook AI Research’s open-source platform for crowdsourcing AI training data, including an end-to-end testing framework and a published React review template.</p>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">Kinme Technologies</h3>
+            <p class="timeline__meta"><time datetime="2020">2020</time>, Lead &amp; Founding Frontend Engineer</p>
+          </div>
+          <p class="timeline__what">Built the web app for a Canadian real-estate services marketplace from scratch, through to a private beta with about 100 clients.</p>
+        </li>
+        <li class="timeline__item reveal">
+          <div class="timeline__head">
+            <h3 class="timeline__stop">SAP</h3>
+            <p class="timeline__meta"><time datetime="2019">2019</time>, Software Developer Intern</p>
+          </div>
+          <p class="timeline__what">Two internships: Android SDK performance work demoed to customers every month, then big-data tooling where I raised test coverage to 83.5%.</p>
+        </li>
+      </ol>
+    </section>
 
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-      crossorigin="anonymous"
-    ></script>
-    <script type="module" src="javascript/index.js"></script>
-    <script type="module" src="javascript/navbarScrollEffect.js"></script>
-  </body>
+    <section class="row row--contact" aria-labelledby="contact-label">
+      <h2 class="label reveal" id="contact-label">Contact</h2>
+      <address class="contact-details reveal">
+        <a href="mailto:sathirakatugaha@gmail.com">sathirakatugaha@gmail.com</a><br />
+        <a class="u" href="https://www.linkedin.com/in/sathirakatugaha" rel="me">LinkedIn</a><br />
+        <a class="u" href="https://x.com/SathTweet" rel="me">@SathTweet</a>
+      </address>
+      <figure class="portrait row__main reveal">
+        <a class="zoom" href="{{root}}images/portrait-full.webp" data-avif="{{root}}images/portrait-full.avif">
+          <picture style="background-color:#f8f8f8">
+            <source type="image/avif" srcset="{{root}}images/portrait-468.avif" />
+            <img src="{{root}}images/portrait-468.webp" alt="Sathira Katugaha smiling, sitting on a wooden bench in a tan corduroy shirt and white T-shirt" width="468" height="531" loading="lazy" decoding="async" />
+          </picture>
+        </a>
+      </figure>
+    </section>
+  </main>
+
+  <!-- @footer -->
+</body>
 </html>

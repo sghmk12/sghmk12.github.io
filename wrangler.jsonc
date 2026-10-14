@@ -1,0 +1,14 @@
+// Cloudflare deploy config: an assets-only Worker serving the Vite build.
+// `npm run deploy` builds, then uploads dist/ and (re)attaches the domains below.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "sathira-world",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist"
+  },
+  "routes": [
+    { "pattern": "sathira.world", "custom_domain": true },
+    { "pattern": "www.sathira.world", "custom_domain": true }
+  ]
+}

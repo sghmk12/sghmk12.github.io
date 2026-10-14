@@ -1,0 +1,10 @@
+# Cloudflare response headers (https://developers.cloudflare.com/workers/static-assets/headers/).
+# Pages keep Cloudflare's default (revalidate every visit) so edits show up immediately.
+
+# Built JS/CSS/fonts have content hashes in their names, so they never change in place.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Photo tiles keep their names when re-cropped, so cache for a week rather than forever.
+/images/life/*
+  Cache-Control: public, max-age=604800

@@ -1,0 +1,7 @@
+User-agent: *
+# Content Signals (https://contentsignals.org): yes to search indexing, to AI
+# tools using pages to answer questions, and to AI model training.
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+Allow: /
+
+Sitemap: https://sathira.world/sitemap.xml
